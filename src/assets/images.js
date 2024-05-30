@@ -69,6 +69,7 @@ const images={
     rating:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616295/eatery%20food%20delivery/frontend_assets/rating_starts_rouacl.png",
 
     logo:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716622711/eatery%20food%20delivery/frontend_assets/logo_pwuvup.png",
+    favicon:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716964503/eatery%20food%20delivery/frontend_assets/logo-color_zpkaom.svg",
 
     logout:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616294/eatery%20food%20delivery/frontend_assets/logout_icon_w7yssb.png",
 
