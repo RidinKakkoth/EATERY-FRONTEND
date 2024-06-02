@@ -16,7 +16,7 @@ const menu_list=[
         menu_image:menu3
     },
     {
-        menu_name:"Sandwitch",
+        menu_name:"Sandwich",
         menu_image:menu4
     },
     {

@@ -9,7 +9,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"111",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:"salad"
+        category:"Salad"
     },
     {
         _id:"2",
@@ -17,7 +17,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food2,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Salad"
     },
     {
         _id:"3",
@@ -25,7 +25,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food3,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Salad"
     },
     {
         _id:"4",
@@ -33,7 +33,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food4,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Salad"
     },
     {
         _id:"5",
@@ -41,7 +41,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food5,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Rolls"
     },
     {
         _id:"6",
@@ -49,7 +49,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food6,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Rolls"
     },
     {
         _id:"7",
@@ -57,7 +57,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Rolls"
     },
     {
         _id:"8",
@@ -65,7 +65,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Rolls"
     },
     {
         _id:"9",
@@ -73,7 +73,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Deserts"
     },
     {
         _id:"10",
@@ -81,7 +81,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Deserts"
     },
     {
         _id:"11",
@@ -89,7 +89,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Deserts"
     },
     {
         _id:"12",
@@ -97,7 +97,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Deserts"
     },
     {
         _id:"13",
@@ -105,7 +105,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Sandwich"
     },
     {
         _id:"14",
@@ -113,7 +113,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Sandwich"
     },
     {
         _id:"15",
@@ -121,7 +121,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Sandwich"
     },
     {
         _id:"16",
@@ -129,7 +129,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Sandwich"
     },
     {
         _id:"17",
@@ -137,7 +137,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Cake"
     },
     {
         _id:"18",
@@ -145,7 +145,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Cake"
     },
     {
         _id:"19",
@@ -153,7 +153,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Cake"
     },
     {
         _id:"20",
@@ -161,7 +161,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Cake"
     },
     {
         _id:"21",
@@ -169,7 +169,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Pure Veg"
     },
     {
         _id:"22",
@@ -177,7 +177,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Pure Veg"
     },
     {
         _id:"23",
@@ -185,7 +185,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Pure Veg"
     },
     {
         _id:"24",
@@ -193,7 +193,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Pure Veg"
     },
     {
         _id:"25",
@@ -201,7 +201,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Pasta"
     },
     {
         _id:"26",
@@ -209,7 +209,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Pasta"
     },
     {
         _id:"27",
@@ -217,7 +217,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Pasta"
     },
     {
         _id:"28",
@@ -225,7 +225,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Pasta"
     },
     {
         _id:"29",
@@ -233,7 +233,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Noodles"
     },
     {
         _id:"30",
@@ -241,7 +241,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Noodles"
     },
     {
         _id:"31",
@@ -249,7 +249,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Noodles"
     },
     {
         _id:"32",
@@ -257,7 +257,7 @@ const{food1,food2,food3,food4,food5,food6,food7,food8,food9,food10,food11,food12
         image:food1,
         price:"",
         description:"Food provides essential nutrients for overall health and well-being",
-        category:""
+        category:"Noodles"
     },
     {
         _id:"33",
