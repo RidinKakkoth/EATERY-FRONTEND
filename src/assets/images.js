@@ -59,10 +59,10 @@ const images={
 
     bag:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616293/eatery%20food%20delivery/frontend_assets/bag_icon_rn255c.png",
     basket:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/basket_icon_nkak42.png",
-    cartadd:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/add_icon_green_etivqx.png",
-    cartremove:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616295/eatery%20food%20delivery/frontend_assets/remove_icon_red_wnz850.png",
+    cartadd_green:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/add_icon_green_etivqx.png",
+    cartremove_red:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616295/eatery%20food%20delivery/frontend_assets/remove_icon_red_wnz850.png",
 
-    add:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/add_icon_white_h3wpsl.png",
+    add_black:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/add_icon_white_h3wpsl.png",
 
     search:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616295/eatery%20food%20delivery/frontend_assets/search_icon_t4hmfy.png",
 
