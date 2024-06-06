@@ -29,7 +29,7 @@ const FoodItem = ({id,name,price,description,image}) => {
                 <img className='w-[70px]' src={images.rating} alt="" />
             </div>
             <p className='text-[#676767] text-[12px] '>{description}</p>
-            <p className='text-[tomato] text-[22px] font-medium mx-0 my-[10px] '>${price}</p>
+            <p className='text-[tomato] text-[22px] font-medium mx-0 my-[10px] '>₹{price}</p>
         </div>
     </div>
   )
