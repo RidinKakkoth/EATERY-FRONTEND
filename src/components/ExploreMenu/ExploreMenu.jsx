@@ -1,10 +1,11 @@
 import menu_list from "../../assets/menuList"
+import './ExploreMenu.css'
 
 const ExploreMenu = ({category,setCategory}) => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5" id="explore-menu">
       <h1 className="text-4xl font-medium text-[#262626]">Explore our menu</h1>
-      <p className="max-w-[60%] text-[#808080] ">Choose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience, one delecious meal at a time.</p>
+      <p id="explore-menu-text" className="max-w-[60%] text-[#808080] ">Choose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience, one delecious meal at a time.</p>
       <div className="flex justify-between items-center gap-[30px] text-center mx-0 my-[20px] overflow-x-scroll no-scrollbar">
         {menu_list.map((item,index)=>{
             return(

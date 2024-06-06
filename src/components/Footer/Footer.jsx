@@ -1,9 +1,10 @@
 import images from "../../assets/images";
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className="text-[#d9d9d9] bg-[#323232] flex flex-col gap-5 items-center py-5 px-[8vw] mt-24 " >
-      <div className="w-full  grid grid-cols-[2fr_1fr_1fr] gap-20 ">
+    <div id="footer" className="text-[#d9d9d9] bg-[#323232] flex flex-col gap-5 items-center py-5 px-[8vw] mt-24 " >
+      <div id="footer-content" className="w-full  grid grid-cols-[2fr_1fr_1fr] gap-20 ">
         <div className="flex flex-col items-start  gap-5  ">
           <img src={images.logo} alt="" />
           <p>
@@ -36,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="bg-gray-500 border-none w-full h-[2px] mx-0 my-5 " />
-      <p>© 2024 RK Eatery . All rights reserved.</p>
+      <p id="copyright">© 2024 RK Eatery . All rights reserved.</p>
     </div>
   );
 };
