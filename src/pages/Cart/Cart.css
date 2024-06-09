@@ -11,3 +11,14 @@
     justify-content: space-between;
     color: #555;
 }
+
+
+@media (max-width:750px) {
+    
+    #cart-bottom{
+        flex-direction: column-reverse;
+    }
+    #promocode{
+        justify-content: start;
+    }
+}

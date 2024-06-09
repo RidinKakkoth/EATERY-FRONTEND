@@ -6,18 +6,18 @@ import { StoreContext } from '../../context/StoreContext'
 const FoodItem = ({id,name,price,description,image}) => {
 
 
-    const{cartItems,addToCart,removeFromCart}=useContext(StoreContext)
+    const{cartItem,addToCart,removeFromCart}=useContext(StoreContext)
 
   return (
     <div className='w-full m-auto rounded-[15px] [box-shadow:0px_0px_10px_#00000015] [transition:0.3s] animate-[fadeIn_3s] '>
         <div className='relative '>
             <img className='w-full rounded-t-[15px] ' src={image} alt="" />
             {
-                !cartItems[id]
+                !cartItem[id]
                 ? <img className='w-[35px] absolute bottom-[15px] right-[15px] cursor-pointer rounded-full ' onClick={()=>addToCart(id)} src={images.add_black} alt="" />:
                 <div className='absolute bottom-[15px] right-[15px] flex items-center gap-[10px] p-[6px] rounded-[50px] bg-white '> 
                     <img className='w-[30px] ' onClick={()=>removeFromCart(id)} src={images.cartremove_red} alt="" />
-                    <p>{cartItems[id]}</p>
+                    <p>{cartItem[id]}</p>
                     <img className='w-[30px] ' onClick={()=>addToCart(id)} src={images.cartadd_green} alt="" />
 
                 </div>
