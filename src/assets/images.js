@@ -61,6 +61,7 @@ const images={
     basket:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/basket_icon_nkak42.png",
     cartadd_green:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/add_icon_green_etivqx.png",
     cartremove_red:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616295/eatery%20food%20delivery/frontend_assets/remove_icon_red_wnz850.png",
+    empty_cart:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1717915477/eatery%20food%20delivery/frontend_assets/empty_cart_ugmgyv.png",
 
     add_black:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/add_icon_white_h3wpsl.png",
 

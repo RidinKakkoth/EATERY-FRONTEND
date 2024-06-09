@@ -1,14 +1,21 @@
 import { useContext } from "react"
 import { StoreContext } from "../../context/StoreContext"
+import {useNavigate} from 'react-router-dom'
 import './Cart.css'
+import images from "../../assets/images"
 
 const Cart = () => {
 
+  
+  const navigate=useNavigate()
 
    const {food_list,cartItem,removeFromCart,getTotalCartAmount}=useContext(StoreContext)
 
+   const isEmptyCart = Object.values(cartItem).every(qty => qty === 0);
+
   return (
     <div className="mt-24">
+      {!isEmptyCart?(<> 
       <div >
         <div className="cart-items-title text-gray-500">
           <p>Items</p>
@@ -50,15 +57,21 @@ const Cart = () => {
             <hr className="my-[10px] mx-0" />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>₹ {2}</p>
+              <p>₹ {getTotalCartAmount()===0?0:2}</p>
             </div>
             <hr className="my-[10px] mx-0" />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>₹ {getTotalCartAmount()+2}</b>
+              <b>₹ {getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
             </div>
           </div>
-            <button className="bg-eatery text-white w-[max(15vw,200px)] py-3 px-0 rounded-md   ">PROCEED TO CHECKOUT</button>
+          <button 
+  onClick={() => navigate('/order')} 
+  className={`bg-eatery text-white w-[max(15vw,200px)] py-3 px-0 rounded-md ${getTotalCartAmount() === 0 ? 'opacity-50 cursor-not-allowed' : ''}`} 
+  disabled={getTotalCartAmount() === 0}
+>
+  PROCEED TO CHECKOUT
+</button>
         </div>
         <div id="promocode" className=" flex-1">
           <div>
@@ -70,6 +83,12 @@ const Cart = () => {
           </div>
         </div>
       </div>
+      </>):
+      <>
+      <img className="m-auto w-[max(15vw,200px)]" src={images.empty_cart} alt="" />
+      </>
+      }
+
     </div>
   )
 }
