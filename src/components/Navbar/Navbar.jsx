@@ -1,16 +1,24 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import images from '../../assets/images'
 import './Navbar.css'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext'
 
 const Navbar = ({setShowLogin}) => {
 
+  const navigate=useNavigate()
 
     const[menu,setMenu]=useState("home")
-    const{getTotalCartAmount}=useContext(StoreContext)
+    
+    const{getTotalCartAmount,token,setToken}=useContext(StoreContext)
+   
 
-
+    const logout=()=>{
+      localStorage.removeItem("token")
+      setToken("")
+      navigate('/')
+    }
+    console.log(token,"t");
 
   return (
     <div  className='navbar py-5 px-0 flex justify-between items-center'>
@@ -27,7 +35,22 @@ const Navbar = ({setShowLogin}) => {
                <Link to='/cart'> <img src={images.basket} alt="" className="" /></Link>
                 {getTotalCartAmount()>0?<div className=" absolute min-w-[10px] min-h-[10px] bg-eatery border rounded-full top-[-8px] right-[-8px] "></div>:<></>}
             </div>
-            <button onClick={()=>setShowLogin(true)} className='text-[16px] text-bluegrey border border-solid border-eatery rounded-full px-[30px] py-[10px] cursor-pointer hover:bg-[#fff4f2]'>signin</button>
+            {!token? 
+            <button onClick={()=>setShowLogin(true)} className='text-[16px] text-bluegrey border border-solid border-eatery rounded-full px-[30px] py-[10px] cursor-pointer hover:bg-[#fff4f2]'>sign in</button>
+          :<div className="relative group">
+          <img src={images.profile} alt="Profile" />
+          <ul className="absolute hidden  right-0 z-10 group-hover:flex flex-col gap-[10px] bg-[#fff2ef] py-3 px-8 rounded-[4px] border border-eatery outline outline-2 outline-white">
+            <li className="flex cursor-pointer  justify-center items-center gap-[10px] hover:text-eatery">
+              <img className='w-5' src={images.bag} alt="Orders" />
+              Orders
+            </li>
+            <hr />
+            <li onClick={logout} className="flex cursor-pointer  justify-center items-center gap-[10px] hover:text-eatery">
+              <img className='w-5' src={images.logout} alt="Logout" />
+              <p>Logout</p>
+            </li>
+          </ul>
+             </div>}
         </div>
     </div>
   )

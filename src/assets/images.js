@@ -55,7 +55,7 @@ const images={
     facebook:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/facebook_icon_qmyxkq.png",
     parcel:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616302/eatery%20food%20delivery/frontend_assets/parcel_icon_gtozlj.png",
     selector:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616302/eatery%20food%20delivery/frontend_assets/selector_icon_iu5qjv.png",
-    proile:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616299/eatery%20food%20delivery/frontend_assets/profile_icon_mycqqd.png",
+    profile:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616299/eatery%20food%20delivery/frontend_assets/profile_icon_mycqqd.png",
 
     bag:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616293/eatery%20food%20delivery/frontend_assets/bag_icon_rn255c.png",
     basket:"https://res.cloudinary.com/ddymh3cnk/image/upload/v1716616292/eatery%20food%20delivery/frontend_assets/basket_icon_nkak42.png",
