@@ -18,7 +18,7 @@ const Navbar = ({setShowLogin}) => {
       setToken("")
       navigate('/')
     }
-    console.log(token,"t");
+    
 
   return (
     <div  className='navbar py-5 px-0 flex justify-between items-center'>
@@ -40,10 +40,12 @@ const Navbar = ({setShowLogin}) => {
           :<div className="relative group">
           <img src={images.profile} alt="Profile" />
           <ul className="absolute hidden  right-0 z-10 group-hover:flex flex-col gap-[10px] bg-[#fff2ef] py-3 px-8 rounded-[4px] border border-eatery outline outline-2 outline-white">
+            <Link to='/myorders'>
             <li className="flex cursor-pointer  justify-center items-center gap-[10px] hover:text-eatery">
               <img className='w-5' src={images.bag} alt="Orders" />
               Orders
             </li>
+            </Link>
             <hr />
             <li onClick={logout} className="flex cursor-pointer  justify-center items-center gap-[10px] hover:text-eatery">
               <img className='w-5' src={images.logout} alt="Logout" />

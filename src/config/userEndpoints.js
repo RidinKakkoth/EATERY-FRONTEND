@@ -67,7 +67,6 @@ export const loadCartCall=async()=>{
 
     try {
         const{data}=await userAxiosInstance.get('api/cart/get-cart')
-        console.log(data);
         return data
     } catch (error) {
         return {
