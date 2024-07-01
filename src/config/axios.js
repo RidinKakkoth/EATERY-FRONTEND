@@ -1,6 +1,8 @@
 import axios from "axios";
 
-export const url = "http://localhost:4000/";
+// export const url = "http://localhost:4000/";
+export const url = "https://eatery-backend.onrender.com/";
+
 const TIMEOUT_DURATION = 110000;
 
 const axiosInstanceWithInterceptor = () => {

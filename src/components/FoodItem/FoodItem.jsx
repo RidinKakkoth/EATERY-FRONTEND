@@ -8,12 +8,11 @@ const FoodItem = ({id,name,price,description,image}) => {
 
 
     const{cartItem,addToCart,removeFromCart}=useContext(StoreContext)
-    console.log(cartItem[id],"cid");
 
   return (
-    <div className='w-full m-auto rounded-[15px] [box-shadow:0px_0px_10px_#00000015] [transition:0.3s] animate-[fadeIn_3s] '>
-        <div className='relative '>
-            <img className='w-full rounded-t-[15px] ' src={url+"images/"+image} alt="" />
+    <div className='w-full  h-full m-auto rounded-[15px] [box-shadow:0px_0px_10px_#00000015] [transition:0.3s] animate-[fadeIn_3s] '>
+        <div className='relative w-full  h-[200px] overflow-hidden'>
+            <img className='w-full object-cover object-center rounded-t-[15px] ' src={url+"images/"+image} alt="" />
             {
                 !cartItem[id]
                 ? <img className='w-[35px] absolute bottom-[15px] right-[15px] cursor-pointer rounded-full ' onClick={()=>addToCart(id)} src={images.add_black} alt="" />:
