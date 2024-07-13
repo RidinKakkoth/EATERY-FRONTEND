@@ -13,6 +13,17 @@ export const login=async(userData)=>{
           }
     }
 }
+export const googleLogin=async(token)=>{
+    try {
+        const{data}=await userAxiosInstance.post('api/auth/google',{token:token})
+        return data
+    } catch (error) {
+        return {
+            success: false,
+            message: error.response?.data?.message || error.message,
+          }
+    }
+}
 
 export const register=async(userData)=>{
     try {

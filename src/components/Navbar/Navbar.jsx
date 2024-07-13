@@ -10,7 +10,7 @@ const Navbar = ({setShowLogin}) => {
 
     const[menu,setMenu]=useState("home")
     
-    const{getTotalCartAmount,token,setToken}=useContext(StoreContext)
+    const{getTotalCartAmount,token,setToken,profilePic}=useContext(StoreContext)
    
 
     const logout=()=>{
@@ -37,8 +37,8 @@ const Navbar = ({setShowLogin}) => {
             </div>
             {!token? 
             <button onClick={()=>setShowLogin(true)} className='text-[16px] text-bluegrey border border-solid border-eatery rounded-full px-[30px] py-[10px] cursor-pointer hover:bg-[#fff4f2]'>sign in</button>
-          :<div className="relative group">
-          <img src={images.profile} alt="Profile" />
+          :<div className="relative group ">
+          <img src={profilePic?profilePic:images.profile} className='w-9 h-9  rounded-full' alt="Profile" />
           <ul className="absolute hidden  right-0 z-10 group-hover:flex flex-col gap-[10px] bg-[#fff2ef] py-3 px-8 rounded-[4px] border border-eatery outline outline-2 outline-white">
             <Link to='/myorders'>
             <li className="flex cursor-pointer  justify-center items-center gap-[10px] hover:text-eatery">

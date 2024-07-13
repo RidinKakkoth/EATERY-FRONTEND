@@ -2,12 +2,13 @@ import { useContext, useState } from "react"
 import images from "../../assets/images"
 import { login, register } from "../../config/userEndpoints"
 import { StoreContext } from "../../context/StoreContext"
+import GoogleButton from "./GoogleButton"
 
 const LoginPopup = ({setShowLogin}) => {
 
     const[currentState,setCurrentState]=useState("Login")
     
-    const{setToken}=useContext(StoreContext)
+    const{setToken,setProfilePic}=useContext(StoreContext)
 
     const[data,setData]=useState({
         name:"",
@@ -58,10 +59,16 @@ const LoginPopup = ({setShowLogin}) => {
                 <input onChange={onChangeHandler} name="password" value={data.password} className="boder border-[1px] border-solid border-[#c9c9c9] p-[10px] rounded-md " type="password" placeholder="Password"  required />
             </div>
             <button type="submit" className="p-[10px] rounded-md text-white bg-eatery text-[15px] ">{currentState==="Sign Up"?"Create account":"Login" }</button>
+           
+            {/* <hr className="border"/> */}
+            <GoogleButton setShowLogin={setShowLogin} setProfilePic={setProfilePic} setToken={setToken} />
+
             <div className="flex items-start gap-2 mt-[-15px]">
-                <input className="mt-[5px] boder border-[1px] border-solid border-[#c9c9c9] p-[10px] rounded-md " type="checkbox" required />
-                <p>By continuing, i agree to the Terms of Service and Privacy Policy</p>
+               
+                {/* <input className="mt-[5px] boder border-[1px] border-solid border-[#c9c9c9] p-[10px] rounded-md " type="checkbox" required /> */}
+                {/* <p>By continuing, i agree to the Terms of Service and Privacy Policy</p> */}
             </div>
+            
             {currentState==="Login"?<p>Create a new account? <span className="cursor-pointer text-eatery font-[500] " onClick={()=>setCurrentState("Sign Up")}>Click here</span></p>
             :<p>Already have an account <span className="cursor-pointer text-eatery font-[500] " onClick={()=>setCurrentState("Login")}>Login here</span></p>}
         </form>

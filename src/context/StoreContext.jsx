@@ -6,6 +6,7 @@ const StoreContextProvider=(props)=>{
 
     const [cartItem,setCartItem]=useState({})
     const[token,setToken]=useState("")
+    const[profilePic,setProfilePic]=useState(null)
     const[food_list,setFood_list]=useState([])
 
     useEffect(()=>{
@@ -82,7 +83,9 @@ const StoreContextProvider=(props)=>{
         removeFromCart,
         getTotalCartAmount,
         token,
-        setToken
+        setToken,
+        profilePic,
+        setProfilePic
     }
 
     return(
